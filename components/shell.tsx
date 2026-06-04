@@ -10,7 +10,7 @@ export function Shell({ children, stats }: Props) {
   const lastRun = stats.lastRuns[0];
 
   return (
-    <main className="mx-auto flex min-h-screen w-full max-w-7xl flex-col gap-5 px-4 py-5 sm:px-6 lg:px-8">
+    <main className="mx-auto flex min-h-screen w-full max-w-[1095px] flex-col gap-5 px-4 py-5 sm:px-6 lg:px-8">
       <header className="glass rounded-lg px-5 py-4">
         <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
           <div>

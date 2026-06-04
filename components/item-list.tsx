@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useMemo, useState } from "react";
 import { Bookmark, ExternalLink, MessageSquareText, Star } from "lucide-react";
@@ -18,7 +18,7 @@ export function ItemList({ items }: { items: Item[] }) {
   }
 
   return (
-    <section className="grid gap-3">
+    <section className="glass rounded-lg p-3 grid gap-3">
       {items.map((item) => (
         <ItemCard key={item.id} item={item} />
       ))}
@@ -48,9 +48,9 @@ function ItemCard({ item }: { item: Item }) {
   }
 
   return (
-    <article className="glass rounded-lg p-4 transition hover:-translate-y-0.5 hover:bg-white/70">
+    <article className="min-w-0 rounded-lg border border-white/60 bg-white/70 p-4 transition hover:-translate-y-0.5 hover:bg-white/85">
       <div className="flex flex-col gap-3 lg:flex-row lg:items-start lg:justify-between">
-        <div className="min-w-0 flex-1">
+        <div className="min-w-0 flex-1 break-words">
           <div className="flex flex-wrap items-center gap-2">
             <span className="rounded-md bg-white/70 px-2 py-1 text-xs font-medium text-teal">
               {sourceLabels[item.source.kind]}
